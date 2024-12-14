@@ -1,0 +1,32 @@
+# Данный файл сделан для того, чтобы иметь под рукой список полезных команд
+# консоли linux
+
+# Базовые утилиты
+arch = показать текущую архитектуру
+whoami = показать текущего пользователя
+tar -tvf <tar_archive> = получить список файлов в архиве tar
+tar -xvf <tar_archive> = разъархивировать все файлы в архиве tar
+curl http://team-nexus.dockerclients.ru:8000/get_request = сделать HTTP-запрос GET
+curl -u admin:D5umqPQkaF http://team-nexus.dockerclients.ru:8000/get_request = сделать HTTP-запрос GET с BASIC аутентификацией
+
+# Функционал пользователей и групп linux
+groupadd <mygroup> = добавить группу "mygroup"
+
+# Функционал администрирования linux
+sudo -i = перейти в пользователя root в терминале
+sudo vi /etc/ssh/sshd_config = посмотреть текущую ssh конфигурацию
+
+# ssh/scp
+# Базовые команды
+ssh tiny_little_user@91.230.61.199 = открыть новое ssh-подключение к удаленному серверу
+ssh -i ~/Documents/Finly/finly_rsa.pem.pub tiny_little_user@91.230.61.199 = открыть новое ssh-подключение к удаленному серверу c RSA-ключем
+who -u = показать список ssh-сессий
+sudo kill -HUP 32004 = терминировать ssh-сессию
+
+# Передать локальный файл на удаленный сервер через ssh-подключение
+scp app.py tiny_little_user@91.230.61.199:/opt/feature_sync 
+scp myfile.txt remoteuser@remoteserver:/remote/folder/
+
+# Gunicorn
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04-ru = настройка gunicorn
+gunicorn --bind 0.0.0.0:5000 wsgi:app = запустить приложение
