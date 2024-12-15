@@ -16,6 +16,8 @@ less /etc/passwd = список всех пользователей linux
 less /etc/group = список всех групп linux
 groupadd <mygroup> = добавить группу "mygroup"
 ls -ld <directory> = посмотреть на разрешения для папки
+sudo chown <user> <directory> = поменять владельца папки на указанного
+chmod 0755 <directory> = поменять права на папку на указанные
 
 # Функционал администрирования linux
 sudo -i = перейти в пользователя root в терминале
