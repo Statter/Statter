@@ -26,6 +26,7 @@ service <service> status = проверить текущий статус сер
 # Базовые команды
 ssh tiny_little_user@91.230.61.199 = открыть новое ssh-подключение к удаленному серверу
 ssh -i ~/Documents/Finly/finly_rsa.pem.pub tiny_little_user@91.230.61.199 = открыть новое ssh-подключение к удаленному серверу c RSA-ключем
+ssh -i "D:\VS projects\Finli\finly_rsa.pem" -vT git@github.com = протестировать подключение по ssh
 who -u = показать список ssh-сессий
 sudo kill -HUP 32004 = терминировать ssh-сессию
 
