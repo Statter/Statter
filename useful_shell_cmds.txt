@@ -24,7 +24,7 @@ sudo -i = перейти в пользователя root в терминале
 sudo -s = перейти в пользователя root в терминале
 sudo vi /etc/ssh/sshd_config = посмотреть текущую ssh конфигурацию
 service <service> status = проверить текущий статус сервиса <service>
-
+sudo journalctl -u <service> = зачитать журнал сервиса 
 # ssh/scp
 # Базовые команды
 ssh tiny_little_user@91.230.61.199 = открыть новое ssh-подключение к удаленному серверу
