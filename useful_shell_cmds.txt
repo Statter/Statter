@@ -4,16 +4,20 @@
 # Базовые утилиты
 arch = показать текущую архитектуру
 whoami = показать текущего пользователя
+uname -a = полная информация об операционной системе
 tar -tvf <tar_archive> = получить список файлов в архиве tar
 tar -xvf <tar_archive> = разъархивировать все файлы в архиве tar
 curl http://team-nexus.dockerclients.ru:8000/get_request = сделать HTTP-запрос GET
 curl -u admin:D5umqPQkaF http://team-nexus.dockerclients.ru:8000/get_request = сделать HTTP-запрос GET с BASIC аутентификацией
 
 # Функционал пользователей и групп linux
+less /etc/passwd = список всех пользователей linux
+less /etc/group = список всех групп linux
 groupadd <mygroup> = добавить группу "mygroup"
 
 # Функционал администрирования linux
 sudo -i = перейти в пользователя root в терминале
+sudo -s = перейти в пользователя root в терминале
 sudo vi /etc/ssh/sshd_config = посмотреть текущую ssh конфигурацию
 
 # ssh/scp
@@ -30,3 +34,6 @@ scp myfile.txt remoteuser@remoteserver:/remote/folder/
 # Gunicorn
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04-ru = настройка gunicorn
 gunicorn --bind 0.0.0.0:5000 wsgi:app = запустить приложение
+
+# Docker
+docker exec -it store.web.1 sh = зайти в терминал контейнера
