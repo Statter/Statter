@@ -33,6 +33,7 @@ sudo kill -HUP 32004 = терминировать ssh-сессию
 # Передать локальный файл на удаленный сервер через ssh-подключение
 scp app.py tiny_little_user@91.230.61.199:/opt/feature_sync 
 scp myfile.txt remoteuser@remoteserver:/remote/folder/
+scp -i finly_rsa.pem <file_to_transfer> mikhail@51.250.35.118:/home/mikhail = передать файл с указанием приватного ключа
 
 # Gunicorn
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04-ru = настройка gunicorn
