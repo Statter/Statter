@@ -20,6 +20,7 @@ groupadd <mygroup> = добавить группу "mygroup"
 sudo -i = перейти в пользователя root в терминале
 sudo -s = перейти в пользователя root в терминале
 sudo vi /etc/ssh/sshd_config = посмотреть текущую ssh конфигурацию
+service <service> status = проверить текущий статус сервиса <service>
 
 # ssh/scp
 # Базовые команды
