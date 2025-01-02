@@ -51,3 +51,9 @@ sudo docker run -d --name phpmyadmin -p 8182:80 -e PMA_HOST=51.250.35.118 phpmya
 sudo docker container stop phpmyadmin - пример остановки контейнера
 sudo docker rm phpmyadmin - пример удаления контейнера
 docker exec -it store.web.1 sh = зайти в терминал контейнера
+
+docker system prune --all
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all dangling build cache
