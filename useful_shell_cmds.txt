@@ -46,4 +46,8 @@ https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications
 gunicorn --bind 0.0.0.0:5000 wsgi:app = запустить приложение
 
 # Docker
+sudo docker container ls - посмотреть список запущенных контейнеров
+sudo docker run -d --name phpmyadmin -p 8182:80 -e PMA_HOST=51.250.35.118 phpmyadmin/phpmyadmin - пример запуска нового контейнера из образа
+sudo docker container stop phpmyadmin - пример остановки контейнера
+sudo docker rm phpmyadmin - пример удаления контейнера
 docker exec -it store.web.1 sh = зайти в терминал контейнера
