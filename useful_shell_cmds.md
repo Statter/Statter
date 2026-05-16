@@ -21,7 +21,7 @@
 `less /etc/group` = список всех групп linux<br/>
 `useradd <myuser>` = добавить пользователя "myuser" без домашней директории<br/>
 `useradd -m <myuser>` = добавить пользователя "myuser" с домашней директорией "/home/myuser"<br/>
-`useradd -d <myhomedir> <myuser>` = добавить пользователя "myuser" с домашней директорией <myhomedir><br/>**
+`useradd -d <myhomedir> <myuser>` = добавить пользователя "myuser" с домашней директорией <myhomedir><br/>
 `useradd -u <uid> -g <gid> <myuser>` = добавить пользователя "myuser" с заданным ID пользователя (uid) и группы (gid)<br/>
 `useradd -s /bin/bash <myuser>` = добавить пользователя "myuser" с заданной оболочкой<br/>
 `useradd -G adm,cdrom,wheel <myuser>` = добавить пользователя "myuser" с добавлением в заданные группы<br/>
