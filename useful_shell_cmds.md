@@ -75,3 +75,18 @@ https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications
 * all networks not used by at least one container
 * all dangling images
 * all dangling build cache
+
+## Git
+### Базовые команды
+`git clone {repo_url}` - клонировать удаленный репозиторий {repo_url} в текущую папку
+`git fetch origin` - клонировать удаленный репозиторий {repo_url} в текущую папку
+
+### Вспомогательные действия
+`git {cmd} --dry-run` - посмотреть результат выполнения команды без реального исполнения
+`git fetch origin --prune` - обновить индекс и удалить из локального индекса ветки, которые не существует на удаленном сервере
+`git -с http.sslVerify=false clone {repo_url}` - пропустить проверку SSL сертификатов при выполнении команды
+
+### Для клонирования больших репозиториев:
+Нужно выполнить команды последовательно, для того, чтобы клонировать большой репозиторий:
+`git config --global http.postBuffer 524288000` - команда на размер буфера
+`git clone {repo_url} --depth 1` - клонировать удаленный репозиторий {repo_url} в текущую папку
